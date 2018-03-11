@@ -1,6 +1,6 @@
 module.exports = (robot) ->
   robot.respond /おはよう/, (msg) ->
-    msg.send msg.random [{@user.name} "ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
+    msg.send msg.random ["ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
 
   robot.hear /こんにちは/, (msg) ->
     msg.send msg.random ["ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
