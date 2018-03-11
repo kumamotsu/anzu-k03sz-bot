@@ -7,4 +7,4 @@ module.exports = (robot) ->
 
 module.exports = (robot) ->
   robot.respond /こんばんは/, (res) ->
-    msg.send ["うん、おやすみ"]
+    msg.send "うん、おやすみ"
