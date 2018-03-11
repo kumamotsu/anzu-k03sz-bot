@@ -1,11 +1,9 @@
 module.exports = (robot) ->
-  robot.respond /こんにちは/i, (msg) ->
+  robot.respond /こんにちは/, (msg) ->
     msg.send msg.random ["ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
 
-module.exports = (robot) ->
-  robot.hear /おはよう/i, (msg) ->
+  robot.hear /おはよう/, (msg) ->
     msg.send msg.random ["ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
 
-module.exports = (robot) ->
-  robot.hear /こんばんは/i, (msg) ->
+  robot.hear /こんばんは/, (msg) ->
     msg.send ["うん、おや\nすみ..."]
