@@ -6,4 +6,4 @@ module.exports = (robot) ->
     msg.send msg.random ["ちわー", "こんにちはっ", "ちゃーす", "こ、こんにちは"]
 
   robot.respond /こんばんは/, (msg) ->
-    msg.send ["うん、おや\nすみ..."]
+    msg.send ["うん、おやすみ..."]
