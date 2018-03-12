@@ -8,10 +8,16 @@ module.exports = (robot) ->
   robot.hear /こんばんは/, (msg) ->
     msg.send msg.random ["@#{msg.message.user.name}\n夜だね〜、プロデューサー。\nよし、あんず、寝るね！", "@#{msg.message.user.name}\nわぁ、プロデューサー。まだ仕事残ってるの？", "@#{msg.message.user.name}\nプロデューサー、もう帰るの？\nあんずも一緒に帰って大丈夫？", "@#{msg.message.user.name}\nねぇねぇあんず、夜ご飯はハンバーグがいいな〜", "@#{msg.message.user.name}\nはっ、ね、寝てないよ。", "@#{msg.message.user.name}\n お腹空いたな〜。プロデューサーは夜ご飯何食べるの？"]
 
-  robot.hear /"つかれた","疲れた"/, (msg) ->
+  robot.hear /疲れた/, (msg) ->
+    msg.send msg.random ["@#{msg.message.user.name}\nが、頑張りなよ。どうしたの急に。", "@#{msg.message.user.name}\nあんずもたくさん働いて疲れちゃったなぁ〜。\nよく寝るに限るね〜。", "@#{msg.message.user.name}\nえ〜？ 飴食べる？ 多分元気でるよ？", "@#{msg.message.user.name}\n もうちょっと頑張って！ あんずはその間、あっちでのんびりしてるね。", "@#{msg.message.user.name}\nプロデューサーも大変だなぁ", "@#{msg.message.user.name}\nプロデューサー、無理せず少し休んだら？ うん､絶対それがいいよっ！"]
+
+  robot.hear /つかれた/, (msg) ->
     msg.send msg.random ["@#{msg.message.user.name}\nが、頑張りなよ。どうしたの急に。", "@#{msg.message.user.name}\nあんずもたくさん働いて疲れちゃったなぁ〜。\nよく寝るに限るね〜。", "@#{msg.message.user.name}\nえ〜？ 飴食べる？ 多分元気でるよ？", "@#{msg.message.user.name}\n もうちょっと頑張って！ あんずはその間、あっちでのんびりしてるね。", "@#{msg.message.user.name}\nプロデューサーも大変だなぁ", "@#{msg.message.user.name}\nプロデューサー、無理せず少し休んだら？ うん､絶対それがいいよっ！"]
 
   robot.hear /おやすみ/, (msg) ->
+    msg.send msg.random ["@#{msg.message.user.name}\nあんずももう寝るよ〜。\nおやすみ、プロデューサー。", "@#{msg.message.user.name}\nうん、おやすみプロデューサー。", "@#{msg.message.user.name}\nおやすみ〜。先に布団を占領してるけど気にしないでね。", "@#{msg.message.user.name}\nふわ〜、眠いと思ったらそんな時間か...あんずも寝る...", "@#{msg.message.user.name}\nプロデューサー、休養も大事な仕事だよっ！！"]
+
+  robot.hear /お休み/, (msg) ->
     msg.send msg.random ["@#{msg.message.user.name}\nあんずももう寝るよ〜。\nおやすみ、プロデューサー。", "@#{msg.message.user.name}\nうん、おやすみプロデューサー。", "@#{msg.message.user.name}\nおやすみ〜。先に布団を占領してるけど気にしないでね。", "@#{msg.message.user.name}\nふわ〜、眠いと思ったらそんな時間か...あんずも寝る...", "@#{msg.message.user.name}\nプロデューサー、休養も大事な仕事だよっ！！"]
 
   robot.hear /あんずちゃん/, (msg) ->

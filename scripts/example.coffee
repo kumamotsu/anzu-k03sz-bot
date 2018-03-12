@@ -13,6 +13,7 @@
 #   robot.hear /badger/i, (res) ->
 #     res.send "Badgers? BADGERS? WE DON'T NEED NO STINKIN BADGERS"
 #
+#                           第一引数、match[1]に渡す  
 #   robot.respond /open the (.*) doors/i, (res) ->
 #     doorType = res.match[1]
 #     if doorType is "pod bay"
