@@ -17,7 +17,7 @@ module.exports = (robot) ->
   robot.hear /あんずちゃん/, (msg) ->
     msg.send msg.random ["@#{msg.message.user.name}\nうん？ どうしたの？\nプロデューサー", "@#{msg.message.user.name}\nプロデューサー、疲れたの？\n飴食べる？", "@#{msg.message.user.name}\nあんず、ポテチを食べたいけど事務所になくて絶望しているところだよ...", "@#{msg.message.user.name}\nねぇねぇ、プロデューサー、事務所に布団がないよう", "@#{msg.message.user.name}\nい、いやだっ！ 私は働かないぞっ！\nアイドルだろうとなんだろうと…お断りだーっ！！\n……え？ アイドルになれば印税で一生楽に生きていける？\nほ、本当？ …は、話を聞かせてもらおうじゃないか", "@#{msg.message.user.name}\n 果報は寝て待てって名言だよね"]
 
-  robot.hear /飴占いして/, (msg) ->
+  robot.hear /飴占い/, (msg) ->
     msg.send msg.random ["@#{msg.message.user.name}\n黄色いものを身につければ大吉かなぁ。きらりとか？", "@#{msg.message.user.name}\nややめでたい感じだよ。1日幸せそうに過ごせるんじゃないかな〜。", "@#{msg.message.user.name}\nこれは中吉な雰囲気だね〜。\n本当のおみくじには「中吉」はあんまり存在しないみたいだから、いい方に受け取るといいんじゃないかな。", "@#{msg.message.user.name}\nうん、ごめん、いまチョコ食べてるんだよねぇ。チョコ吉でいい？", "@#{msg.message.user.name}\nうん、悪い結果が出たとしてもさ、ただの飴占いだから。\nいい結果が出たって思って前向いて頑張ろうよ、プロデューサー。", "@#{msg.message.user.name}\nプロデューサー。今朝占いで「アイドルのプロデューサーさんは担当アイドルを甘やかすと吉」って言ってたよ～！"]
 
   robot.hear /ヘルプ/, (msg) ->
